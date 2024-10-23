@@ -7,7 +7,7 @@
 use std::process::{Child, Command, Output};
 
 fn build_cmd(cmd_str: &str) -> Command {
-    let mut cmd = Command::new("arch -x86_64 sh");
+    let mut cmd = Command::new("sh");
     cmd.arg("-c").arg(cmd_str);
     cmd
 }
